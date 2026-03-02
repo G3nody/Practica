@@ -1,0 +1,171 @@
+{
+  "info": {
+    "_postman_id": "b2a49a43-910b-4f08-81d7-05d1d9b5d722",
+    "name": "API Películas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52841201",
+    "_collection_link": "https://go.postman.co/collection/52841201-b2a49a43-910b-4f08-81d7-05d1d9b5d722?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Listar películas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/api_peliculas/index.php?accion=listar",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "api_peliculas",
+            "index.php"
+          ],
+          "query": [
+            {
+              "key": "accion",
+              "value": "listar"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear película",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "nombre",
+              "value": "Gato con Botas",
+              "type": "text",
+              "uuid": "23d6f688-41be-4d0d-b47e-cc442b5193e2"
+            },
+            {
+              "key": "fecha_publicacion",
+              "value": "2022-09-21",
+              "type": "text",
+              "uuid": "07b58704-e7db-4755-bd9b-ef340fae742e"
+            },
+            {
+              "key": "sala_cine",
+              "value": "Sala 2",
+              "type": "text",
+              "uuid": "36457cee-d036-4541-9bb2-5a3df945733a"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost/api_peliculas/index.php?accion=crear",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "api_peliculas",
+            "index.php"
+          ],
+          "query": [
+            {
+              "key": "accion",
+              "value": "crear"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar película por nombre",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/api_peliculas/index.php?accion=buscar_nombre&nombre=Titanic",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "api_peliculas",
+            "index.php"
+          ],
+          "query": [
+            {
+              "key": "accion",
+              "value": "buscar_nombre"
+            },
+            {
+              "key": "nombre",
+              "value": "Titanic"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar película por fecha",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/api_peliculas/index.php?accion=buscar_fecha&fecha=2024-01-15",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "api_peliculas",
+            "index.php"
+          ],
+          "query": [
+            {
+              "key": "accion",
+              "value": "buscar_fecha"
+            },
+            {
+              "key": "fecha",
+              "value": "2024-01-15"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Estado de sala",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/api_peliculas/index.php?accion=estado_sala&sala=Sala 3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "api_peliculas",
+            "index.php"
+          ],
+          "query": [
+            {
+              "key": "accion",
+              "value": "estado_sala"
+            },
+            {
+              "key": "sala",
+              "value": "Sala 3"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
